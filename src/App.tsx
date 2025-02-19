@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import boschHell from './assets/boschhell.jpg';
 import './App.css'
+import ListItem from './ListItem.tsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,8 @@ function App() {
       <p className="text-3xl text-green-300">
         We're going to test tailwind.css
       </p>
+      <h3 className="text-2xl">A list of items!</h3>
+      <ListItem itemNum={1} />
     </div>
   )
 }
