@@ -24,7 +24,9 @@ function App() {
         We're going to test tailwind.css
       </p>
       <h3 className="text-2xl">A list of items!</h3>
-      {Array(5).keys().map(x => <ListItem itemNum={x + 1} />)}
+      <div>
+        {Array(5).keys().map(x => <ListItem itemNum={x + 1} />)}
+      </div>
     </div>
   )
 }
