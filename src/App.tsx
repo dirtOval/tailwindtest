@@ -15,7 +15,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p className="text-purple-300">
+        <p className="text-purple-300 hover:text-green-500 hover:text-xl">
           WOW ITS TAILWIND
         </p>
       </div>
