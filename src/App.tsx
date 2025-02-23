@@ -2,6 +2,9 @@ import { useState } from 'react'
 import boschHell from './assets/boschhell.jpg';
 import './App.css'
 import ListItem from './ListItem.tsx';
+import FormTest from './FormTest.tsx';
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +15,7 @@ function App() {
           <img src={boschHell} className="logo" alt="Vite logo" />
       </div>
       <h1>Tailwind Test</h1>
-      <div className="card">
+      <div className="card outline-2 outline-red-500">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
@@ -23,6 +26,10 @@ function App() {
       <p className="text-3xl text-green-300">
         We're going to test tailwind.css
       </p>
+      <h3 className="text-xl">Some Forms:</h3>
+      <div>
+        <FormTest />
+      </div>
       <h3 className="text-2xl">A list of items!</h3>
       <div>
         {Array(5).keys().map(x => <ListItem itemNum={x + 1} />)}
