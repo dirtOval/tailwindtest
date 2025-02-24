@@ -24,7 +24,7 @@ function App() {
           WOW ITS TAILWIND
         </p>
       </div>
-      <p className="text-3xl text-green-300">
+      <p className="first-letter:text-7xl text-3xl text-green-300">
         We're going to test tailwind.css
       </p>
       <h3 className="text-xl">Some Forms:</h3>
@@ -35,6 +35,8 @@ function App() {
       <div>
         {Array(5).keys().map(x => <ListItem itemNum={x + 1} />)}
       </div>
+
+      <h1 className="text-2xl first-letter:text-6xl hidden print:block">This message will only show up when printed.</h1>
     </div>
   )
 }
