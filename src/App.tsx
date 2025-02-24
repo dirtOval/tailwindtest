@@ -15,11 +15,12 @@ function App() {
           <img src={boschHell} className="logo" alt="Vite logo" />
       </div>
       <h1>Tailwind Test</h1>
-      <div className="card outline-2 outline-red-500">
-        <button onClick={() => setCount((count) => count + 1)}>
+      <div className="card outline-2 outline-red-500 group">
+        <button onClick={() => setCount((count) => count + 1)}
+                className="bg-gray-500 outline-2 outline-green-500 hover:bg-purple-500">
           count is {count}
         </button>
-        <p className="text-purple-300 hover:text-green-500 hover:text-xl">
+        <p className="text-purple-300 hover:text-green-500 group-has-focus:text-xl">
           WOW ITS TAILWIND
         </p>
       </div>
