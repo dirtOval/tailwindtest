@@ -8,7 +8,7 @@ function FormTest() {
   }
 
   return (
-    <div className="bg-white outline-1 outline-green-500">
+    <div className="bg-white outline-1 outline-green-500 has-checked:bg-red-500">
       <form>
         <input className="bg-black text-green-500"
                type="text"
