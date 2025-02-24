@@ -18,6 +18,9 @@ function FormTest() {
                type="checkbox"
                onClick={handleClick.bind(this)} />
         <label htmlFor="disablebox">disable input?</label>
+        <input className="bg-black invalid:text-red-500 text-green-500"
+               type="email"
+               placeholder="deirdre@deirdre.com" />
       </form>
     </div>
   )
