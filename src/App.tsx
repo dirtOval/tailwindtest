@@ -3,6 +3,7 @@ import boschHell from './assets/boschhell.jpg';
 import './App.css'
 import ListItem from './ListItem.tsx';
 import FormTest from './FormTest.tsx';
+import NestTest from './NestTest.tsx';
 
 
 
@@ -37,6 +38,7 @@ function App() {
       </div>
 
       <h1 className="text-2xl first-letter:text-6xl hidden print:block">This message will only show up when printed.</h1>
+      <NestTest />
     </div>
   )
 }
